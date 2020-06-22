@@ -36,10 +36,10 @@ class Counter extends Component {
       <div className="counter-main">
         <h1>{this.state.number}</h1>
         <div class="counter-button-area">
-          <button className="counter-plus" onClick={this.handleIncrease}>+</button>
-          <button className="counter-minus" onClick={this.handleDecrease}>-</button>
+          <button className="counter-pmbtn" onClick={this.handleIncrease}><i class="fas fa-plus"></i></button>
+          <button className="counter-pmbtn counter-pmbtn-margin" onClick={this.handleDecrease}><i class="fas fa-minus"></i></button>
         </div>
-        <a className="counter-reset" onClick={this.handleReset}>Reset</a>
+        <a className="counter-reset" onClick={this.handleReset}>Reset<i class="fas fa-angle-right"></i></a>
       </div>
     );
   }
